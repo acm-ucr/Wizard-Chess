@@ -424,32 +424,28 @@ void MainWindow::on_pushButton_Gryffindor_clicked()
 {
     whiteChoice->userChoice = 1;
     ui->stackedWidget->setCurrentIndex(2);
-    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Gryffindor_2");
-    buttonToDisable->setEnabled(false);
+    ui->stackedWidget->findChild<QPushButton*>("pushButton_Gryffindor_2")->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Slytherin_clicked()
 {
     whiteChoice->userChoice = 2;
     ui->stackedWidget->setCurrentIndex(2);
-    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Slytherin_2");
-    buttonToDisable->setEnabled(false);
+    ui->stackedWidget->findChild<QPushButton*>("pushButton_Slytherin_2")->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Hufflepuff_clicked()
 {
     whiteChoice->userChoice = 4;
     ui->stackedWidget->setCurrentIndex(2);
-    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Hufflepuff_2");
-    buttonToDisable->setEnabled(false);
+    ui->stackedWidget->findChild<QPushButton*>("pushButton_Hufflepuff_2")->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Ravenclaw_clicked()
 {
     whiteChoice->userChoice = 8;
     ui->stackedWidget->setCurrentIndex(2);
-    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Ravenclaw_2");
-    buttonToDisable->setEnabled(false);
+    ui->stackedWidget->findChild<QPushButton*>("pushButton_Ravenclaw_2")->setEnabled(false);
 }
 
 // Bits For Black Home Click

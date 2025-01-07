@@ -77,9 +77,9 @@ rgb(0, 0, 0)
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>170</x>
         <y>110</y>
-        <width>351</width>
+        <width>451</width>
         <height>121</height>
        </rect>
       </property>
@@ -104,9 +104,9 @@ rgb(0, 0, 0)
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>357</x>
+        <x>350</x>
         <y>100</y>
-        <width>80</width>
+        <width>191</width>
         <height>30</height>
        </rect>
       </property>
@@ -201,9 +201,9 @@ rgb(0, 0, 0)
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>245</x>
+        <x>190</x>
         <y>20</y>
-        <width>310</width>
+        <width>511</width>
         <height>50</height>
        </rect>
       </property>
@@ -328,19 +328,16 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label_22">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>190</x>
         <y>20</y>
-        <width>541</width>
+        <width>521</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 22pt &quot;Segoe UI&quot;;
-QLabel
-{
-     qproperty-alignment: 'AlignVCenter | AlignLeft';
- 		qproperty-wordWrap: true;
-}</string>
+qproperty-alignment: 'AlignVCenter | AlignHCenter;
+qproperty-wordWrap: true;</string>
       </property>
       <property name="text">
        <string>BLACK: CHOOSE YOUR HOUSE!</string>
