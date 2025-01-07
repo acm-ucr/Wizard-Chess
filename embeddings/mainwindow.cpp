@@ -423,42 +423,58 @@ void MainWindow::on_randomGeneratorButton_clicked()
 void MainWindow::on_pushButton_Gryffindor_clicked()
 {
     whiteChoice->userChoice = 1;
+    ui->stackedWidget->setCurrentIndex(2);
+    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Gryffindor_2");
+    buttonToDisable->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Slytherin_clicked()
 {
     whiteChoice->userChoice = 2;
+    ui->stackedWidget->setCurrentIndex(2);
+    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Slytherin_2");
+    buttonToDisable->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Hufflepuff_clicked()
 {
     whiteChoice->userChoice = 4;
+    ui->stackedWidget->setCurrentIndex(2);
+    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Hufflepuff_2");
+    buttonToDisable->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_Ravenclaw_clicked()
 {
     whiteChoice->userChoice = 8;
+    ui->stackedWidget->setCurrentIndex(2);
+    QPushButton* buttonToDisable = ui->stackedWidget->findChild<QPushButton*>("pushButton_Ravenclaw_2");
+    buttonToDisable->setEnabled(false);
 }
 
 // Bits For Black Home Click
 void MainWindow::on_pushButton_Gryffindor_2_clicked()
 {
     blackChoice->userChoice = 1;
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::on_pushButton_Slytherin_2_clicked()
 {
     blackChoice->userChoice = 2;
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::on_pushButton_Hufflepuff_2_clicked()
 {
     blackChoice->userChoice = 4;
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::on_pushButton_Ravenclaw_2_clicked()
 {
     blackChoice->userChoice = 8;
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::change_endgame_status()
